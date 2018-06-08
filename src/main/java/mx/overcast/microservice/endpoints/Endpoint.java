@@ -2,8 +2,10 @@ package mx.overcast.microservice.endpoints;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import mx.overcast.microservice.messages.Message;
@@ -24,7 +26,7 @@ public class Endpoint {
 			consumes = MediaType.APPLICATION_JSON_VALUE,
 			path = "/regards"
 			)
-	public Message regards(Message message) {
+	public @ResponseBody Message regards(@RequestBody Message message) {
 		return regardsService.sayHi(message);
 	}
 }
