@@ -1,14 +1,13 @@
 pipeline {
   agent any
   stages {
-    stage('Quality Analisys') {
-      agent any
-      environment {
-        withSonarQubeEnv = 'SQ_Dev'
-      }
+    stage('Quality analysis') {
       steps {
         waitForQualityGate true
       }
     }
+  }
+  environment {
+    withSonarQubeEnv = 'SQ_Dev'
   }
 }
