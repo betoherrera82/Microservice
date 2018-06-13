@@ -1,4 +1,8 @@
 node {
+   stage('Clone Repository') {
+        git 'https://github.com/betoherrera82/Microservice.git'
+   }
+
    stage('Build Maven Image') {
         docker.build("maven-build")
    }
