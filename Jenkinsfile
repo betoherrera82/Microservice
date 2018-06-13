@@ -8,7 +8,7 @@ node {
    }
    
    stage('Run Maven Container') {
-        sh "docker run --rm --name maven-build-container maven-build"
+        sh "docker run --name maven-build-container maven-build"
    }
    
    stage('Deploy Spring Boot Application') {
