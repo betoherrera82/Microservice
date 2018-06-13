@@ -8,6 +8,7 @@ node {
    }
    
    stage('Run Maven Container') {
+   		sh "docker rm maven-build-container"
         sh "docker run --rm --name maven-build-container maven-build"
    }
    
