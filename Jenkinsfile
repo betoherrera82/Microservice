@@ -1,8 +1,18 @@
 node {
-   stage('Clone Repository') {
-        git 'https://github.com/betoherrera82/Microservice.git'
-    
-   }
+   stage('Quality analysis') {
+      agent any
+      steps {
+      	withSonarQubeEnv('SQ') {
+      	    sh 'mvn clean package sonar:sonar'
+      	} 
+      }
+    }
+    stage('Quality gate') {
+    	agent any
+    	steps {
+    	   waitForQualityGate false   
+    	}
+    }
    stage('Build Maven Image') {
         docker.build("maven-build")
    }
