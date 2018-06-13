@@ -1,6 +1,6 @@
 node {
    stage('Clone Repository') {
-        git 'https://github.com/denisdbell/spring-petclinic.git'
+        git 'https://github.com/betoherrera82/Microservice.git'
     
    }
    stage('Build Maven Image') {
