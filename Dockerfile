@@ -6,6 +6,6 @@ VOLUME ["/deploy/application"]
 
 WORKDIR /deploy/application
 
-ADD Microservice .
+ADD . .
 
 ENTRYPOINT ["mvn","clean","package"]
