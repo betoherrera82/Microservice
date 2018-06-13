@@ -5,22 +5,22 @@ import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(
 		value = "User",
-		description = "Objeto que representa al usuario."
+		description = "Representacion del objeto usuario."
 		)
 public class User {
 
 	@ApiModelProperty(
 			name = "firstName",
-			notes = "Nombre del usuario. Requerido",
-			value = "Nombre del usuario. Requerido",
+			notes = "Nombre de pila del usuario. Requerido",
+			value = "Nombre de pila del usuario. Requerido",
 			required = true
 			)
 	private String firstName;
 	
 	@ApiModelProperty(
 			name = "lastName",
-			notes = "Apellido del usuario. Requerido",
-			value = "Apellido del usuario. Requerido",
+			notes = "Apellido Paterno del usuario. Requerido",
+			value = "Apellido Paterno del usuario. Requerido",
 			required = true
 			)
 	private String lastName;

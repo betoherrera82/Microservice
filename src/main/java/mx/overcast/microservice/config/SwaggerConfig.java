@@ -23,8 +23,8 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo apiInfo() {
-		ApiInfo apiInfo = new ApiInfo("Overcast API", "Servicio workshop devops", "v.1.0", "",
+		return new ApiInfo("Overcast API", "Servicio workshop devops", "v.1.0", "",
+
 				new Contact("", "", ""), "", "");
-		return apiInfo;
 	}	
 }
