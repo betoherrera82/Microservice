@@ -4,7 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(
-		value = "User",
+		value = "Regards",
 		description = "Objeto que representa al saludo."
 		)
 public class Regards {
