@@ -13,7 +13,7 @@ public class RegardsService {
 		User user = message.getUser();
 		Regards regard = new Regards();
 		
-		regard.setRegard("Hola " + user.getFirstName() + " " + user.getLastName() + "!, ¿Como estas?");
+		regard.setRegard("Hola Sr(a). " + user.getFirstName() + " " + user.getLastName() + "!, ¿Como esta usted esta tarde?");
 		message.setRegards(regard);
 		
 		return message;

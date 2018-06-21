@@ -27,8 +27,8 @@ public class Endpoint {
 	private RegardsService regardsService;
 
 	@ApiOperation(
-			value = "Envia un saludo a un usuario via ws.",
-			notes = "Envia un saludo a un usuario via ws. Revisar el modelo para determinar los campos requeridos.",
+			value = "Envia un saludo a un usuario.",
+			notes = "Envia un saludo a un usuario. Revisar el modelo para determinar los campos requeridos.",
 			nickname = "regards"
 			)
 	@RequestMapping(
