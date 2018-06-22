@@ -14,8 +14,8 @@ import mx.overcast.microservice.messages.Message;
 import mx.overcast.microservice.services.RegardsService;
 
 @Api(
-		description = "API Overcast",
-		tags = "Regards Endpoint"
+		description = "API Para demo devops azure",
+		tags = "Endpoint de eco"
 		)
 @RestController
 @RequestMapping(
@@ -28,7 +28,7 @@ public class Endpoint {
 
 	@ApiOperation(
 			value = "Envia un saludo a un usuario.",
-			notes = "Envia un saludo a un usuario. Revisar el modelo para determinar los campos requeridos.",
+			notes = "Envia un saludo a un usuario via ws. Revisar el modelo para determinar los campos requeridos.",
 			nickname = "regards"
 			)
 	@RequestMapping(

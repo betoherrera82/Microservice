@@ -23,7 +23,7 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfo("API Overcast Autodeploy", "Servicio Devops", "v.2.0", "",
+		return new ApiInfo("API Demo Devops Azure", "Servicio Devops", "v.2.0", "",
 
 				new Contact("", "", ""), "", "");
 	}	
